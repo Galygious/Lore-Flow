@@ -29,6 +29,12 @@ LoreFlow's **Lore Template Types (`.ltt`)** and **Lore Files (`.ltf`)** are buil
 ✅ **Structured Yet Flexible** – Supports **nested sections, typed values, and inline tables** for structured world-building.  
 ✅ **Minimal Syntax** – Avoids unnecessary symbols (`{}` brackets like JSON or `<tags>` like XML).  
 
+## Technical Documentation
+
+- [Architecture Documentation](docs/architecture.md) - Detailed system architecture and design decisions
+- [File Format Specifications](docs/file-formats.md) - Complete specifications for .ltt and .ltf file formats
+
+
 ### **Example: `.ltt` Template File**
 ```toml
 [header]
@@ -53,19 +59,19 @@ name = "Garlon the Mage"
 race = "Elf"
 level = 12
 ```
-By using **TOML**, LoreFlow ensures **structured, flexible, and easy-to-read world-building files** that are both **human-friendly and machine-efficient**.
+By using **TOML**, LoreFlow ensures **structured, flexible, and easy-to-read world-building files** that are both **human-friendly and machine-efficient**
 
 ---
 
 ## **🔹 Current Status of the Project**
 📌 **LoreFlow is in early development.**  
 
-We are currently **defining the foundation**—**Lore Template Types (`.ltt`)**, **Lore Files (`.ltf`)**, and the **file-based approach**. With the tech stack finalized, we are preparing to **build the first version** of the software.
+I am currently **defining the foundation**—**Lore Template Types (`.ltt`)**, **Lore Files (`.ltf`)**, and the **file-based approach**. With the tech stack finalized, I am preparing to **build the first version** of the software.
 
 ---
 
 ## **🔹 Roadmap & Development Plan**
-LoreFlow is being developed in **phases**, focusing on **functionality first, then UI refinements**.  
+I am developing LoreFlow in **phases**, focusing on **functionality first, then UI refinements**.  
 
 ### **🛠 Phase 1: Core Infrastructure**
 ✅ **Define File Formats** – `.ltt` for templates, `.ltf` for data entries. (Done)  
@@ -114,7 +120,7 @@ LoreFlow is being developed in **phases**, focusing on **functionality first, th
 ---
 
 ## **🔹 Next Development Milestones**
-Since LoreFlow is in early development, we are focusing on **building the foundation first.**  
+Since LoreFlow is in early development, I am focusing on **building the foundation first.**  
 
 🔹 **Initialize the GitHub Repo & Codebase** – Set up the Wails project.  
 🔹 **Build the `.ltt` Template Editor** – First working feature.  
