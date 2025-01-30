@@ -20,6 +20,43 @@ Because **world-building should be structured, intuitive, and frictionless**—s
 
 ---
 
+## **🔹 Why TOML for File Formats?**
+LoreFlow's **Lore Template Types (`.ltt`)** and **Lore Files (`.ltf`)** are built on **TOML (Tom’s Obvious, Minimal Language)**, a lightweight configuration language designed for **human readability and machine efficiency**.  
+
+### **Why TOML?**
+✅ **Readable & Simple** – Easier to understand and edit compared to JSON or XML.  
+✅ **Lightweight & Portable** – No database needed, making file sharing and organization simple.  
+✅ **Structured Yet Flexible** – Supports **nested sections, typed values, and inline tables** for structured world-building.  
+✅ **Minimal Syntax** – Avoids unnecessary symbols (`{}` brackets like JSON or `<tags>` like XML).  
+
+### **Example: `.ltt` Template File**
+```toml
+[header]
+name = "npc"
+version = "1.0"
+
+[fields.general]
+keys = [
+    { key = "name", type = "string", ui_component = "text", required = true },
+    { key = "race", type = "string", ui_component = "dropdown", options = ["Elf", "Human", "Dwarf"] },
+    { key = "level", type = "integer", ui_component = "number", validation = { min = 1, max = 20 } }
+]
+```
+### **Example: `.ltf` Entry File**
+```toml
+[header]
+ltt = "npc"
+created = "2025-01-29T12:34:56Z"
+
+[data.general]
+name = "Garlon the Mage"
+race = "Elf"
+level = 12
+```
+By using **TOML**, LoreFlow ensures **structured, flexible, and easy-to-read world-building files** that are both **human-friendly and machine-efficient**.
+
+---
+
 ## **🔹 Current Status of the Project**
 📌 **LoreFlow is in early development.**  
 
@@ -84,4 +121,4 @@ Since LoreFlow is in early development, we are focusing on **building the founda
 🔹 **Implement `.ltf` File Handling** – Creating & saving lore entries.  
 🔹 **Release an Early Prototype** – Gather feedback from early testers.  
 
-With **LoreFlow**, your world-building stays **structured, intuitive, and frictionless**—so your creativity can **flow**. 🚀 
+With **LoreFlow**, your world-building stays **structured, intuitive, and frictionless**—so your creativity can **flow**. 🚀  
